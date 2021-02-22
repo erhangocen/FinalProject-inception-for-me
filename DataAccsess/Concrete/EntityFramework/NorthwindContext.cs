@@ -7,7 +7,7 @@ using System.Text;
 namespace DataAccsess.Concrete.EntityFramework
 {
     // Context : Db tabloları ile entitiesdeki classları bağlar
-    public class NortwindContext : DbContext
+    public class NorthwindContext : DbContext
     {
         //Database'i Seçiyoz
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -19,5 +19,6 @@ namespace DataAccsess.Concrete.EntityFramework
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Order> Orders { get; set; }
     }
 }
